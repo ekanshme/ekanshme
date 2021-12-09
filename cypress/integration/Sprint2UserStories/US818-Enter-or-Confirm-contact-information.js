@@ -3,7 +3,7 @@
 import EnterOrConfirmContactInfo_PO from "../../support/pageObjects/EnterOrConfirmContactInformation/EnterOrConfirmContactInfo_PO"
 import PropertyLocation_PO from "../../support/pageObjects/DisplayandSelectrepairlocation/PropertyLocation_PO"
 
-describe("Enter or Confirm contact information", () => {
+describe("Enter or Confirm contact informations", () => {
     const enterOrConfirmContactInfo_PO = new EnterOrConfirmContactInfo_PO
     const propertyLocation_PO = new PropertyLocation_PO
 
