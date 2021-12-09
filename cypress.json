@@ -1,0 +1,14 @@
+{
+  "chromeWebSecurity": false,
+  "experimentalFetchPolyfill": true,
+  "env": {
+    "SS_TestURL": "https://pb-uks-test-dep-selfserve-fe.azurewebsites.net/",
+    "SS_DevURL": "https://pb-uks-dev-dep-selfserve-fe.azurewebsites.net/"
+
+  },
+  "projectId": "5763ht",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
+  }

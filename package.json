@@ -1,0 +1,40 @@
+{
+  "name": "ss-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "triggerAllTests-chrome": "npx cypress run --browser chrome",
+    "triggerAllTests-dashboard": "npx cypress run --record --key 40d02487-b61d-4b68-b889-8d2cb2684854",
+    "triggerSprint1-dashboard": "npx cypress run --spec cypress/integration/Sprint1UserStories/* --record --key 40d02487-b61d-4b68-b889-8d2cb2684854",
+    "triggerSprint2-dashboard": "npx cypress run --spec cypress/integration/Sprint2UserStories/* --record --key 40d02487-b61d-4b68-b889-8d2cb2684854",
+    "triggerSprint3-dashboard": "npx cypress run --spec cypress/integration/Sprint3UserStories/* --record --key 40d02487-b61d-4b68-b889-8d2cb2684854",
+    "triggerAllTests-Sprint1Stories": "npx cypress run --spec cypress/integration/Sprint1UserStories/*",
+    "triggerAllTests-Sprint2Stories": "npx cypress run --spec cypress/integration/Sprint2UserStories/*",
+    "triggerAllTests-Sprint3Stories": "npx cypress run --spec cypress/integration/Sprint3UserStories/*",
+    "triggerAllTests-SpecificSpecs": "npx cypress run --spec cypress/integration/Sprint1UserStories/US807-Select-repair-property-tenancy-Multiple.js,cypress/integration/Sprint1UserStories/US808-Select-the-property-type.js,cypress/integration/Sprint1UserStories/US809-Determine-property-type-eligibility.js",
+    "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-reports": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/* || true",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
+    "cypress-sprint1-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-Sprint1Stories && npm run mochawesome-merge"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.7.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "dependencies": {
+    "cypress-xpath": "^1.6.2"
+  }
+}

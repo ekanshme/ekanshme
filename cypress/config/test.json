@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://pb-uks-test-dep-selfserve-fe.azurewebsites.net/",
+    "env":{
+        "name": "Test"
+    }
+
+}
