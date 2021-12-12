@@ -10,7 +10,7 @@ class SingleCurrentTenancies_PO {
 
     enterCustIDandContinue(){
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
        // cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.singleTenantCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')

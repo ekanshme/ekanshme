@@ -10,7 +10,7 @@ class PropertyLocation_PO {
 
     selectPropLocation(){
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -33,7 +33,7 @@ class PropertyLocation_PO {
 
     highLevelDescFieldDisplayed(){
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
        // cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -69,7 +69,7 @@ class PropertyLocation_PO {
 
     passRepairPolicyCheck(){
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.MuiOutlinedInput-root').find('.MuiOutlinedInput-input').type(data.socialCustomer)
         cy.get('.MuiInputBase-input').should('have.attr', 'placeholder', 'Customer ID')
@@ -98,7 +98,7 @@ class PropertyLocation_PO {
     continueMandatoryInfoComplete(){
         
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
        // cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -144,7 +144,7 @@ class PropertyLocation_PO {
     continueMandatoryInfoNotComplete(){
 
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
        // cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')

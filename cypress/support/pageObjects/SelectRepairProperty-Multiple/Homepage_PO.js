@@ -11,7 +11,7 @@ class HomePage_PO {
 
     enterCustIDandContinue() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
       //  cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.multipleTenantCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -22,7 +22,7 @@ class HomePage_PO {
 
     changeRepairProperty() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
       //  cy.url().should('include', 'test')
        // cy.get('.mt-1').type(data.multipleTenantCustomer)
        cy.get('.mt-1').type('f3eab8b5-b6c3-e811-80de-0050569540e1')
