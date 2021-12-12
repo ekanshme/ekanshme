@@ -10,7 +10,7 @@ class DisplayCovidQues_PO {
 
     selfIsolatingQuesDisplayed() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -72,7 +72,7 @@ class DisplayCovidQues_PO {
 
     selfIsolatingResponseNo() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -135,7 +135,7 @@ class DisplayCovidQues_PO {
 
     selfIsolatingResponseYes() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
@@ -198,7 +198,7 @@ class DisplayCovidQues_PO {
 
     selfIsolatingQuesNotAnswered() {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
-        cy.title().should('include', 'PeaBody Self Serve')
+        cy.title().should('include', 'Peabody Self Serve')
         cy.url().should('include', 'test')
         cy.get('.mt-1').type(data.socialCustomer)
         cy.get('.MuiFormLabel-root').should('have.text', 'Customer ID*')
