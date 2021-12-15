@@ -20,7 +20,7 @@ describe("Select repair property/tenancy - Multiple", () => {
         // cy.scrollTo('top')
     })
 
-    it("Acceptance Criteria 1 - Multiple current tenancies", () => {
+    it("Acceptance Criteria 1 - Multiple current tenanciess", () => {
 
         homepage_PO.enterCustIDandContinue()
     })
